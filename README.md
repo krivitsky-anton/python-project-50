@@ -1,6 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/krivitsky-anton/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/krivitsky-anton/python-project-50/actions)
 [![Action Status](https://github.com/krivitsky-anton/python-project-50/actions/workflows/pyci.yml/badge.svg)](https://github.com/krivitsky-anton/python-project-50/actions)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/df66c0cbbeca7d822f23/test_coverage)](https://codeclimate.com/github/krivitsky-anton/python-project-50)
 
 # Gendiff: Configuration Files Comparison Tool
 
