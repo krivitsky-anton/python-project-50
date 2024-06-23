@@ -20,7 +20,7 @@ jobs:
           poetry install
       - name: Run linter
         run: |
-          make lint
+          poetry run make lint
       - name: Publish code coverage
         uses: paambaati/codeclimate-action@v5.0.0
         if: github.ref_name == 'main'
