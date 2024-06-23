@@ -34,6 +34,3 @@ def generate_diff(file1, file2):
             res += f'+ {key}: {file2[key]}\n'
     res += '}'
     return res
-
-
-
