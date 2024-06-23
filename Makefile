@@ -1,2 +1,2 @@
 lint:
-	.venv/bin/flake8 .
+	poetry run flake8 .
