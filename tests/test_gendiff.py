@@ -23,18 +23,18 @@ def test_json_f3_f2():
 
 
 def test_yaml_f3_f2():
-    result = generate_diff_yaml(f'{FILE_PATH}file3.json', f'{FILE_PATH}file2.json')
+    result = generate_diff_yaml(f'{FILE_PATH}file3.yml', f'{FILE_PATH}file2.yaml')
     true_result = fixtures.result_f3_f2
     assert result == true_result
 
 
 def test_yaml_f1_f2():
-    result = generate_diff_yaml(f'{FILE_PATH}file3.json', f'{FILE_PATH}file2.json')
+    result = generate_diff_yaml(f'{FILE_PATH}file1.yml', f'{FILE_PATH}file2.yaml')
     true_result = fixtures.result_f1_f2
     assert result == true_result
 
 
 def test_yaml_f1_f3():
-    result = generate_diff_yaml(f'{FILE_PATH}file3.json', f'{FILE_PATH}file2.json')
+    result = generate_diff_yaml(f'{FILE_PATH}file1.yml', f'{FILE_PATH}file3.yml')
     true_result = fixtures.result_f1_f3
     assert result == true_result
