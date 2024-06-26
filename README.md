@@ -33,8 +33,12 @@ Example of comparing two files:
 ```shell
 poetry run gendiff filepath1.json filepath2.json
 ```
+or
+```shell
+poetry run gendiff filepath1.yaml filepath2.yaml
+```
 
-The output will appear in the following format:
+The output for json and yaml will appear in the following format:
 
 ```json
 {
@@ -46,6 +50,7 @@ The output will appear in the following format:
   + verbose: true
 }
 ```
+
 
 ## Command Line Options
 
