@@ -1,8 +1,7 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/krivitsky-anton/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/krivitsky-anton/python-project-50/actions)
-[![Action Status](https://github.com/krivitsky-anton/python-project-50/actions/workflows/pyci.yml/badge.svg)](https://github.com/krivitsky-anton/python-project-50/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/df66c0cbbeca7d822f23/maintainability)](https://codeclimate.com/github/krivitsky-anton/python-project-50)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/df66c0cbbeca7d822f23/test_coverage)](https://codeclimate.com/github/krivitsky-anton/python-project-50)
+[![Actions Status](https://github.com/Cur1yB/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Cur1yB/python-project-50/actions)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/fabc3436947b7dffb5b5/maintainability)](https://codeclimate.com/github/Cur1yB/python-project-50/maintainability)
 
 # Gendiff: Configuration Files Comparison Tool
 
@@ -14,7 +13,7 @@ Gendiff is a command line utility for comparing two configuration files. The too
 
 To install, clone the repository and install using `poetry`:
 
-```shell
+```sh
 git clone https://github.com/Cur1yB/python-project-50
 cd gendiff
 poetry install
@@ -24,21 +23,17 @@ poetry install
 
 To display usage information:
 
-```shell
+```sh
 poetry run gendiff -h
 ```
 
 Example of comparing two files:
 
-```shell
+```sh
 poetry run gendiff filepath1.json filepath2.json
 ```
-or
-```shell
-poetry run gendiff filepath1.yaml filepath2.yaml
-```
 
-The output for json and yaml will appear in the following format:
+The output will appear in the following format:
 
 ```json
 {
@@ -51,8 +46,49 @@ The output for json and yaml will appear in the following format:
 }
 ```
 
-
 ## Command Line Options
 
 - `-h, --help` — display this help message and exit.
 - `-f FORMAT, --format FORMAT` — set the output format (supported formats: `plain`, `json`, `stylish`).
+
+## Output Formats
+
+### Stylish
+
+The default format. Shows changes in a tree structure.
+
+### Plain
+
+A flat text format, convenient for human reading:
+
+```sh
+Property 'common.follow' was added with value: false
+```
+
+### JSON
+
+Outputs the changes in JSON format, convenient for machine processing.
+
+## Development
+
+### Tests
+
+To run tests, use the following command:
+
+```sh
+poetry run pytest
+```
+
+### Linter
+
+To check the code with the linter, execute:
+
+```sh
+make lint
+```
+
+## CI/CD
+
+The project uses GitHub Actions for automated testing and linting. You can see the status of the last commit at the top of this README.
+
+[![asciicast](https://asciinema.org/a/ITRxadyv0Y03h1U56YvnKSddN)](https://asciinema.org/a/ITRxadyv0Y03h1U56YvnKSddN?autoplay=1)
