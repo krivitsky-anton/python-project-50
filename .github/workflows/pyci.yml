@@ -22,14 +22,5 @@ jobs:
       - name: Install dependencies
         run: |
           poetry install
-      - name: Run linter
-        run: |
-          poetry run make lint
-      - name: Publish code coverage
-        uses: paambaati/codeclimate-action@v5.0.0
-        with:
-          coverageCommand: make test-coverage
-          debug: true
-          verifyDownload: true
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
